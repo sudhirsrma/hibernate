@@ -3,6 +3,8 @@ package com.management.entity;
 import lombok.*;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "student")
@@ -21,8 +23,9 @@ public class Student {
     @Column(name = "email", nullable = false)
     private String email;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    private Address address;
+    @OneToMany(mappedBy = "student")
+
+    List<Address> addresses;
 }
 
 

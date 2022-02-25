@@ -21,4 +21,6 @@ public class Address {
     private String city;
     @Column(name = "district")
     private String district;
+    @ManyToOne
+    private Student student;
 }
