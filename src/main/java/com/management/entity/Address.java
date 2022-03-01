@@ -21,6 +21,8 @@ public class Address {
     private String city;
     @Column(name = "district")
     private String district;
-    @ManyToOne
-    private Student student;
+
+//    @ManyToOne(cascade = CascadeType.ALL)
+//    @JoinColumn(name = "student_id")
+//    private Student student;
 }

@@ -23,9 +23,10 @@ public class Student {
     @Column(name = "email", nullable = false)
     private String email;
 
-    @OneToMany(mappedBy = "student")
 
-    List<Address> addresses;
+    @OneToMany( cascade=CascadeType.ALL )
+
+    private List<Address> address;
 }
 
 
