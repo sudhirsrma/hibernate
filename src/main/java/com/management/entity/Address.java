@@ -1,8 +1,5 @@
 package com.management.entity;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
 
@@ -12,6 +9,7 @@ import javax.persistence.*;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@ToString
 public class Address {
 
     @Id
@@ -22,7 +20,5 @@ public class Address {
     @Column(name = "district")
     private String district;
 
-//    @ManyToOne(cascade = CascadeType.ALL)
-//    @JoinColumn(name = "student_id")
-//    private Student student;
+
 }
