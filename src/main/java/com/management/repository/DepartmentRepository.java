@@ -1,9 +1,9 @@
 package com.management.repository;
 
-import com.management.entity.Address;
+import com.management.entity.Department;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface AddressRepository extends JpaRepository<Address,Long> {
+public interface DepartmentRepository extends JpaRepository<Department, Long> {
 }
